@@ -1,0 +1,32 @@
+body{
+    margin-top: 50px;
+    text-align: center;
+
+}
+h1{font-size: 100px;}
+
+#todo{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+
+    width: 30%;
+    justify-self: center;
+    height: fit-content;
+
+}
+ul{margin-bottom: 0;
+    list-style-type:square;
+    padding-left: 2rem;}
+#inpuboxt{
+    padding-left: 1rem ;
+    display: flex;
+    flex-direction: row;
+}
+#addbtn{
+    font-size: 2rem;
+}
+#input{
+    font-size: 2rem;
+    flex-grow: 1;
+}
