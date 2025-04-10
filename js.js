@@ -8,6 +8,9 @@ var addOnClick= function(){
     var task= inputEl.value.trim();
     if(task===""){
         errorEl.style.display="block";
+        inputEl.classList.remove("error");
+        void inputEl.offsetWidth;
+        inputEl.classList.add("error");
         return;
     }
     errorEl.style.display="none"
