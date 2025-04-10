@@ -3,9 +3,11 @@ var inputEl= document.getElementById("input");
 var addbtnEl= document.getElementById("addbtn");
 var donetasksEl= document.getElementById("donetasks");
 var errorEl = document.getElementById("error");
+var timeEl= document.getElementById("time");
 
 var addOnClick= function(){
     var task= inputEl.value.trim();
+    var timeValue = timeEl.value;
     if(task===""){
         errorEl.style.display="block";
         inputEl.classList.remove("error");
@@ -17,8 +19,7 @@ var addOnClick= function(){
 
     if(task!==""){
     var li= document.createElement("li");
-    li.textContent=task;
-
+    li.innerHTML = `${task} <span class="time">⏰ ${timeValue}</span>`;
     var deleteBtn= document.createElement("button");
     deleteBtn.textContent="🗑️";
     deleteBtn.style.marginLeft="0.5rem";
@@ -40,6 +41,7 @@ var addOnClick= function(){
 
     todoEl.appendChild(li);
     inputEl.value="";
+    timeEl.value="";
 }
 };
 
