@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/js-html-interactive/to do list/to-do-list/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>
         to do list
     </h1>
+    <div id="donetasks">
+        <ul>
+        </ul>
+    </div>
     <div id="todo">
         <ul>
-            <li>task1</li>
-            <li>task2</li>
         </ul>
     </div>
     <div id="inputbox">
-        <input id="input" type="text">
+        <input id="input" type="text" placeholder="task">
+        <p id="error" style="color: red; display: none;">Please enter a task!</p>
         <button id="addbtn">Add</button>
     </div>
 
-    <script src="/js-html-interactive/to do list/to-do-list/js.js"></script>
+    <script src="js.js"></script>
 </body>
 </html>
