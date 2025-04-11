@@ -20,6 +20,8 @@ var addOnClick= function(){
     if(task!==""){
     var li= document.createElement("li");
     li.innerHTML = `${task} <span class="time">⏰ ${timeValue}</span>`;
+
+    
     var deleteBtn= document.createElement("button");
     deleteBtn.textContent="🗑️";
     deleteBtn.style.marginLeft="0.5rem";
